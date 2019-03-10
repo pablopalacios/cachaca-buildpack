@@ -1,4 +1,6 @@
 #!/bin/sh
 
-cd pyapp
+set -eo pipefail
+
+cd $1/pyapp
 pip install -r requirements.txt
